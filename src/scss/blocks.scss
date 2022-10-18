@@ -1,0 +1,9 @@
+.title {
+	@include adaptive-font(40, 24);
+	display: flex;	
+	flex-direction: column;
+	align-items: flex-start;	
+	@media (max-width: $lg + px) {
+	  	align-items: center;
+	}
+}

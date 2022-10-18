@@ -1,0 +1,113 @@
+.services {
+	background: linear-gradient(to left, #393F47 40%, #2F343A 40% 60%, #393F47 60% 100%);
+	&__body {
+		
+		display: flex;
+		min-height: 561px;
+		align-items: center;
+		@media (max-width: $lg + px) {
+		  	flex-direction: column;
+		  	text-align: center;
+		}
+
+	}
+	&__title {
+		@media (max-width: $lg + px) {
+		  	margin-bottom: 30px;
+		}
+		
+	}
+	&__img {
+		min-height: 260px;
+		flex: auto;
+	}
+	&__arrows {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+	}
+	&__arrow {
+		align-items: center;
+		justify-content: space-between;
+		display: inline-flex;	
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $gold;
+		@media (max-width: $lg + px) {
+		  	position: absolute;	
+		}
+	}
+	&__arrow_next {
+		&:after{
+			@extend ._icon;
+			content: "\e901";
+			margin-left: 30px;
+		}
+		@media (max-width: $lg + px) {
+		  	top:50%;
+		  	right: 0;	
+		}
+	}
+	&__arrow_prev {
+		&:before{
+			@extend ._icon;
+			content: "\e901";
+			margin-right: 30px;
+			transform: rotate(180deg);
+
+		}
+		@media (max-width: $lg + px) {
+		  	top:50%;
+		  	left: 0;
+		  	
+		}
+	}
+	&__slider{
+		display: flex;
+		width: 100%;
+		position: relative;	
+	
+
+	}
+}
+
+.title {
+	
+	&:before{
+		content: "";
+		height: 6px;
+		width: 90px;
+		margin-bottom: 40px;		
+		background: $gold;
+	}
+	&__label {
+		font-weight: 700;
+		
+		line-height: 49 / 40 * 100%;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28 / 18 * 100%;
+		margin-bottom: 50px;	
+	}
+	&__btn {
+		display: inline-block;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		padding: 18px 48px;	
+		background: $gold;
+	}
+}

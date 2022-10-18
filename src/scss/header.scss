@@ -1,0 +1,49 @@
+.header {
+	background: $gold;
+	&__head {
+		
+	}
+}
+.head {
+	display: flex;	
+	min-height: 45px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14 / 12 * 100%;
+	color: #FFFFFF;	
+	justify-content: 	space-between;
+	align-items: center;
+	&__item {
+
+	}
+}
+.lang {
+	text-transform: uppercase;
+	&__item {
+		opacity: 0.5;
+		margin: 0px 10px 0px 0px;
+		&_active{
+			opacity: 1;
+		}
+		
+		@media (min-width: $md + px) {
+			&:not(.lang__item_active):hover{
+				opacity: 0.7;
+			}
+		}		
+		&:last-child{
+			margin: 0;	
+		}
+	}
+}
+.lang_rus {
+}
+.lang_eng {
+}
+.lang_fr {
+}
+.phone {
+	text-transform: lowercase;
+}
+.email {
+}

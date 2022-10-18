@@ -1,0 +1,51 @@
+//брейкпоинты
+$maxWidthContainer: 1110;
+$lg: 992.74;
+$md: 767.74;
+$sm: 575.74;
+$xs: 468.74;
+/////////////////////////////////////////////
+
+//цвета
+$gold: #C8A35F;
+$dark: #2F343A;
+$hoverColor: #ff6464;
+//////////////////////////////////////////////
+
+//Разметка всей страницы
+
+body{
+  font-family:"Roboto";
+  font-weight: normal;
+  font-size: 20px;
+  overflow-x: hidden;
+  background: $dark;
+  color: #fff;  
+
+}
+.wrapper{
+  display: flex;  
+  min-height: 100%;
+  flex-direction: column;
+
+}
+
+.page{
+  flex: 1 1 auto;
+
+}
+
+
+._container{
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  
+  
+  
+}
+
+
+
+
+

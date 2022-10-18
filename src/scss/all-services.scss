@@ -1,0 +1,85 @@
+.all-services {
+	background: #2F343A;
+	text-transform: uppercase;
+	&__body {
+
+	}
+	&__title {
+		@media (min-width: $lg + px) {
+		  padding-top: 120px;
+		}
+		
+	}
+	&__columns {
+		display: flex;
+		flex-wrap: wrap;		
+	}
+	&__column {
+		flex: 1 0 50%;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	&__row {
+		min-width: 100%;
+		display: flex;
+		
+		
+	}
+	&__item {
+
+
+	}
+}
+
+
+.item {
+	/*класс при наведении*/
+	
+	&:hover{
+		transition: all 1s;
+		background: $gold;
+		.item__icon{
+			transition: all 1s;
+			background: #fff;
+			&:before{
+				color: #000;
+				font-size: 30px;
+			}	
+		}		
+	}
+	flex:auto;
+	background: #393F47;
+
+	&__body {
+		height: 180px;
+		border: 1px solid $dark;		
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 20px;
+		
+
+	}
+	&__icon {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+		&:before{
+			color: #fff;
+			font-size: 30px;
+		}		
+	}
+	&__text {
+
+	}
+}
+._icon {
+}
+._icon-airplane-flight {
+}

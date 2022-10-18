@@ -1,0 +1,164 @@
+
+
+.header {
+	&__menu {		
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: 0.05em;
+
+	}
+	&__logo {
+		
+	}
+}
+.menu {
+	background: $dark;
+	position: relative;
+	
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		min-height: 100px;
+		padding: 20px 10px;
+		align-items: center;
+		@media (max-width: $md + 40 + px) {
+		  flex-direction: column;
+		  justify-content: center;
+		}
+
+	}
+	&__icon {
+	}
+	&__body {
+	}
+	&__list {
+		text-transform: uppercase;		
+		display: none;
+		transition: all 0.5s ease 0s;		
+		@media (min-width: $xs + px) {
+		  display: flex;
+		  
+		  li{
+		  	margin: 0px 30px 0px 0px;
+		  	&:last-child{
+		  		margin-right: 0;
+		  	}
+		  }
+		}
+		&_active{
+			display: flex;
+			transition:all 0.5s ease 0s;
+			
+			@media (max-width: $xs + px) {
+			  	flex-direction: column;
+			  	text-align: center;
+			  	li{
+			  		margin: 0px 0px 20px 0px;
+			  		&:last-child{
+			    		margin-bottom: 0;
+			    		}
+			  	}
+			}
+			
+
+		}
+	}
+	&__link {
+
+	}
+}
+
+.logo {
+	display: flex;
+	@media (max-width: $xs + px) {
+	  flex-direction: column;
+	  align-items: center;
+	  
+
+
+	}
+	@media (max-width: $md + 40 + px) {
+	  padding: 20px 0;
+	}
+	&__img {
+		display: flex;
+		align-items: center;
+		
+		@media (max-width: $xs + px) {
+		  margin: 0px 0px 20px 0px;
+		}
+		&:after{
+			@media (min-width: $xs + px) {
+			  content: '';
+			  border-right: 1px solid #fff;			
+			  height: 46px;
+			  margin: 0px 28px 0px 30px;
+			}
+			
+		}
+	}
+	&__geo {
+		display: flex;
+		align-items: center;
+		@media (max-width: $xs + px) {
+		  margin-left: -20px;
+		}
+	}
+	&__icon{
+		font-size: 25px;
+		color: $gold;
+		margin: 0px 7px 0px 0px;
+	}
+}
+
+
+//бургер
+.icon-menu {	
+  display: none;
+  @media (max-width: $xs + px) {
+    display: block;
+    position: absolute;
+    top: 37px;
+    right: 10px;
+    width: 30px * 1.5;
+    height: 18px * 1.5;
+    cursor: pointer;
+    z-index: 5;
+
+    span{
+      transition: all 0.3s ease 0s, background 0s ease 0.5s;
+      top: calc(50% - 1px);
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      &:first-child{
+        top: 0px;
+      }
+      &:last-child{
+        top: auto;
+        bottom: 0px;
+      }
+    }
+    &_active{
+
+      span{
+                
+        background: #fff;
+        transform: scale(0);
+        &:first-child{
+          transform: rotate(-45deg);
+          top: calc(50% - 1px)
+        }
+        &:last-child{
+          transform: rotate(45deg);
+          bottom: calc(50% - 1px)
+        }
+      }
+    }
+  }
+}
+
+
