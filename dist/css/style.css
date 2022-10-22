@@ -568,6 +568,11 @@ body {
   min-width: 100%;
   display: flex;
 }
+@media (max-width: 468.74px) {
+  .all-services__row {
+    flex-direction: column;
+  }
+}
 .item {
   /*класс при наведении*/
   flex: auto;

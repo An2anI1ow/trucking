@@ -23,6 +23,10 @@
 	&__row {
 		min-width: 100%;
 		display: flex;
+		@media (max-width: $xs + px) {
+		  flex-direction: column;
+		}
+		
 		
 		
 	}
