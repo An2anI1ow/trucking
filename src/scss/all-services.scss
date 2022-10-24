@@ -41,19 +41,21 @@
 
 .item {
 	/*класс при наведении*/
-	
-	&:hover{
-		transition: all 1s;
-		background: $gold;
-		.item__icon{
-			transition: all 1s;
-			background: #fff;
-			&:before{
-				color: #000;
-				font-size: 30px;
-			}	
-		}		
+	@media (min-width: $md + px) {
+	  &:hover{
+	  	transition: all 1s;
+	  	background: $gold;
+	  	.item__icon{
+	  		transition: all 1s;
+	  		background: #fff;
+	  		&:before{
+	  			color: #000;
+	  			font-size: 30px;
+	  		}	
+	  	}		
+	  }
 	}
+	
 	flex:auto;
 	background: #393F47;
 
