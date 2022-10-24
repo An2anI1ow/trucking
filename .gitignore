@@ -1,7 +1,4 @@
 package-lock.json
 /node_modules
-gulp/version.json
-<<<<<<< HEAD
-=======
+/gulp/version.json
 
->>>>>>> dev

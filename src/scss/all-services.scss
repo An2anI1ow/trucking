@@ -2,11 +2,13 @@
 	background: #2F343A;
 	text-transform: uppercase;
 	&__body {
+		padding-top: 120px;
 
 	}
 	&__title {
+
 		@media (min-width: $lg + px) {
-		  padding-top: 120px;
+		  
 		}
 		
 	}
