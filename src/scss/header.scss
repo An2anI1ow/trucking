@@ -1,5 +1,6 @@
 .header {
 	background: $gold;
+
 	&__head {
 		
 	}
@@ -44,6 +45,18 @@
 }
 .phone {
 	text-transform: lowercase;
+	@media (min-width: $md + px) {
+	  &:hover{
+	  	transition: all 1s ease 0s;
+	  	color: $dark;
+	  }
+	}
 }
 .email {
+	@media (min-width: $md + px) {
+	  &:hover{
+	  	transition: all 1s ease 0s;
+	  	color: $dark;
+	  }
+	}
 }

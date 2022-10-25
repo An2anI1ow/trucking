@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
+  "browserslist":["cover 99.5%"],
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",

@@ -13,7 +13,11 @@ $hoverColor: #ff6464;
 //////////////////////////////////////////////
 
 //Разметка всей страницы
-
+html{
+  
+    scroll-behavior: smooth; 
+  
+}
 body{
   font-family:"Roboto";
   font-weight: normal;

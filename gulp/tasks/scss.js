@@ -37,8 +37,8 @@ export const scss = () => {
 		.pipe(app.plugins.if(
 			app.isBuild,
 				autoprefixer({
-				grid: true,
-				overrideBrowserlist: ["last 6 version"],
+				grid: "autoplace",
+				//overrideBrowserlist: ["last 6 version"],
 				cascade: true
 			})
 		))
